@@ -39,6 +39,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     try {
       const raw = localStorage.getItem(KEY);
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- localStorage hydration is a one-time external read
       if (raw) setItems(JSON.parse(raw) as CartItem[]);
     } catch {
       /* ignore */

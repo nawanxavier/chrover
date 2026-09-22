@@ -159,6 +159,7 @@ export const PRODUCTS: Product[] = [
       { label: "Warranty", value: "2 years international" },
     ],
     collection: "Sport",
+    flags: {},
   },
   {
     id: "meridian-diver",
@@ -253,6 +254,7 @@ export const PRODUCTS: Product[] = [
       { label: "Warranty", value: "2 years international" },
     ],
     collection: "Heritage",
+    flags: {},
   },
   {
     id: "nocturne-black",

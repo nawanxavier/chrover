@@ -25,8 +25,6 @@ const DIALS = {
   white:      "#f5f3ef",
 };
 
-const pct = (v) => { const n = parseFloat(v); return `${n.toFixed(3)}%`; };
-
 function watchSVG(opts) {
   const {
     caseColor = "gold",
@@ -40,17 +38,16 @@ function watchSVG(opts) {
   } = opts;
 
   const P = PALETTES[caseColor];
-  const dial = DIALS[dialColor];
-  const dialDark = ["black", "navy", "green", "slate"].includes(dialColor);
+const dial = DIALS[dialColor];
+const dialDark = ["black", "navy", "green", "slate"].includes(dialColor);
 
-  const cx = 450;
-  const cy = 450 + shift;
-  const s = 1 / scale;
+const cx = 450;
+const cy = 450 + shift;
+const s = 1 / scale;
 
-  const R_CASE = 236;
-  const R_BEZEL_IN = 202;
-  const R_DIAL = 178;
-  const R_TICK = 168;
+const R_CASE = 236;
+const R_BEZEL_IN = 202;
+const R_TICK = 168;
 
   const minAngle = (time.h % 12) * 30 + time.m * 0.5;
   const hourAngle = minAngle - 90;
@@ -86,7 +83,7 @@ function watchSVG(opts) {
     }
   }
 
-  const hand = (angle, len, width, color, x1 = 26) =>
+  const hand = (angle, len, width, color) =>
     `<g transform="rotate(${angle} ${cx} ${cy})">
        <rect x="${cx - width / 2}" y="${cy - len}" width="${width}" height="${len}" rx="${width / 2}" fill="${color}"/>
        <rect x="${cx - width / 2 * 1.9}" y="${cy + 6}" width="${width * 1.9}" height="${len * 0.18}" rx="${width / 2}" fill="${color}" opacity="0.92"/>
@@ -131,7 +128,6 @@ function watchSVG(opts) {
     const pip = `<path d="M ${cx - 14} ${cy - R_CASE + 26} L ${cx + 14} ${cy - R_CASE + 26} L ${cx} ${cy - R_CASE + 4} Z" fill="#c9a24b"/>`;
     body += `<g>${pip}${marks}</g>`;
   } else {
-    let bezelMarks = "";
     // minimalist polished bezel band
     body += `<g>
       <circle cx="${cx}" cy="${cy}" r="${R_BEZEL_IN + 16}" fill="none" stroke="${P.hi}" stroke-opacity="0.55" stroke-width="1.4"/>

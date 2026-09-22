@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { CATEGORIES } from "@/lib/products";
 import { site } from "@/lib/site";
@@ -23,6 +23,11 @@ const MESSAGES = [
 
 function AnnouncementBar() {
   const [idx, setIdx] = useState(0);
+
+  useEffect(() => {
+    const t = setInterval(() => setIdx((i) => (i + 1) % MESSAGES.length), 4500);
+    return () => clearInterval(t);
+  }, []);
   return (
     <div className="hairline-b bg-ink-900">
       <div className="mx-auto flex h-9 max-w-[1400px] items-center justify-center px-4">
@@ -190,7 +195,7 @@ export function Header() {
           onClick={() => setOpen(false)}
         />
         <div
-          className={`absolute inset-y-0 left-0 flex w-[86%] max-w-sm flex-col bg-ink-900 shadow-2xl transition-transform duration-400 ${
+          className={`absolute inset-y-0 left-0 flex w-[86%] max-w-sm flex-col bg-ink-900 shadow-2xl transition-transform duration-500 ${
             open ? "translate-x-0" : "-translate-x-full"
           }`}
         >
