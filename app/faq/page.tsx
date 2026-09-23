@@ -7,7 +7,7 @@ import { IconArrow } from "@/components/icons";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers on delivery, payment, warranty, sizing and care for AURELIA watches.",
+    "Answers on delivery, payment, warranty, sizing and care for CHROVER watches.",
 };
 
 const items = [
@@ -21,7 +21,7 @@ const items = [
   },
   {
     q: "Are the watches genuine automatics?",
-    a: "Every AURELIA runs on a mechanical automatic movement — there are no quartz pieces in the collection. Movements are assembled and regulated by hand in our Lahore atelier, and each watch is tested for a year before release.",
+    a: "Every CHROVER runs on a mechanical automatic movement — there are no quartz pieces in the collection. Movements are assembled and regulated by hand in our Lahore atelier, and each watch is tested for a year before release.",
   },
   {
     q: "What does the warranty cover?",
@@ -72,7 +72,7 @@ export default function FaqPage() {
             Replies within minutes during working hours.
           </p>
           <Link
-            href={waLink("Hello AURELIA, I have a question that wasn't answered in the FAQ.")}
+            href={waLink("Hello CHROVER, I have a question that wasn't answered in the FAQ.")}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-gold mt-6"

@@ -34,7 +34,7 @@ function watchSVG(opts) {
     scale = 1,
     shift = 0,
     bgHue = 0,
-    title = "AURELIA",
+    title = "CHROVER",
   } = opts;
 
   const P = PALETTES[caseColor];

@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Reach the AURELIA concierge by phone, email or WhatsApp. Monday–Saturday, 9am–9pm.",
+    "Reach the CHROVER concierge by phone, email or WhatsApp. Monday–Saturday, 9am–9pm.",
 };
 
 const cards = [
@@ -36,7 +36,7 @@ const cards = [
       {
         label: "Fastest reply",
         value: "Start a chat",
-        href: waLink("Hello AURELIA, I have a question about your watches."),
+        href: waLink("Hello CHROVER, I have a question about your watches."),
       },
     ],
   },

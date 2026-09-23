@@ -7,7 +7,7 @@ export function Hero() {
     <section className="relative overflow-hidden">
       {/* background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_68%_38%,#241c10_0%,#120f0a_48%,#0b0a08_100%)]" />
+        <div className="hero-bg absolute inset-0" />
         <div className="pattern-dots absolute inset-0 opacity-40 [mask-image:radial-gradient(70%_60%_at_50%_40%,#000,transparent)]" />
         <div className="absolute top-0 left-1/2 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
       </div>
@@ -15,7 +15,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-[1400px] gap-10 px-4 pt-14 pb-20 sm:px-8 lg:grid-cols-2 lg:items-center lg:pt-20 lg:pb-28">
         {/* Copy */}
         <div className="max-w-xl">
-          <p className="eyebrow">AURELIA · Haute Horlogerie</p>
+          <p className="eyebrow">CHROVER · Haute Horlogerie</p>
           <h1 className="display mt-5 text-5xl leading-[1.04] text-bone-50 sm:text-6xl lg:text-[4.6rem]">
             Time,
             <em className="block text-gold-400">crafted</em>
@@ -61,10 +61,10 @@ export function Hero() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/watches/hero-watch.svg"
-              alt="AURELIA Grand Skeleton automatic watch"
+              alt="CHROVER Grand Skeleton automatic watch"
               width={520}
               height={520}
-              className="w-full drop-shadow-[0_30px_80px_rgba(0,0,0,0.7)]"
+              className="hero-watch w-full drop-shadow-[0_30px_80px_rgba(0,0,0,0.7)]"
             />
             {/* floating chips */}
             <div className="absolute top-[16%] -left-2 hidden border border-gold-500/20 bg-ink-900/90 px-4 py-3 backdrop-blur-sm md:block">
@@ -77,7 +77,7 @@ export function Hero() {
             </div>
             <div className="absolute -bottom-4 left-8 hidden items-center gap-3 md:flex">
               <a
-                href={waLink("Hello AURELIA, I'd love to know more about your watches.")}
+                href={waLink("Hello CHROVER, I'd love to know more about your watches.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link-gold"

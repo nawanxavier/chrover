@@ -25,7 +25,7 @@ const timeline = [
   {
     year: "2019",
     title: "The first bench",
-    text: "AURELIA begins as a single workbench in Lahore and one conviction: Pakistan deserves fine watches made carefully at home.",
+    text: "CHROVER begins as a single workbench in Lahore and one conviction: Pakistan deserves fine watches made carefully at home.",
   },
   {
     year: "2021",
@@ -40,7 +40,7 @@ const timeline = [
   {
     year: "2026",
     title: "Across the country",
-    text: "AURELIA now delivers to every city in Pakistan, with a loyal family of collectors from Karachi to Gilgit.",
+    text: "CHROVER now delivers to every city in Pakistan, with a loyal family of collectors from Karachi to Gilgit.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function AboutPage() {
             Time, <em className="text-gold-400">crafted</em> to last
           </h1>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-bone-400">
-            AURELIA is a Pakistani watch maison built on a refusal — that fine
+            CHROVER is a Pakistani watch maison built on a refusal — that fine
             watchmaking should be an imported luxury. We make it here,
             carefully, in numbers small enough to matter.
           </p>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/watches/story-watch.svg"
-                  alt="An AURELIA chronograph in the atelier"
+                  alt="An CHROVER chronograph in the atelier"
                   loading="lazy"
                   className="w-full"
                 />
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 pride of building for home.
               </p>
               <p>
-                Seven years later every AURELIA still passes through the same
+                Seven years later every CHROVER still passes through the same
                 benches. The steel is milled, polished, regulated and tested
                 within a kilometre of where it is boxed. Nothing leaves until
                 it has kept time for a year on a real wrist.

@@ -33,7 +33,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-4">
             <p className="display text-2xl font-semibold tracking-[0.32em] text-bone-50">
-              AURELIA
+              CHROVER
             </p>
             <p className="mt-1 text-[0.6rem] tracking-[0.3em] text-gold-500 uppercase">
               {site.tagline}
@@ -115,7 +115,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <IconWhatsApp className="h-4 w-4 shrink-0 text-gold-500" />
-                <a href={waLink("Hello AURELIA, I have a question about your watches.")} className="hover:text-gold-400">
+                <a href={waLink("Hello CHROVER, I have a question about your watches.")} className="hover:text-gold-400">
                   WhatsApp the concierge
                 </a>
               </li>
@@ -146,7 +146,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1400px] px-4 py-6 sm:px-8">
         <div className="flex flex-col items-center justify-between gap-4 text-[0.68rem] tracking-[0.14em] text-bone-500 md:flex-row">
           <p>
-            AURELIA © {new Date().getFullYear()} All rights reserved ·
+            CHROVER © {new Date().getFullYear()} All rights reserved ·
             <span className="ml-1 hidden sm:inline">
               Cash on Delivery · JazzCash · Bank Transfer
             </span>

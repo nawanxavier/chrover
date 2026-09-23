@@ -21,7 +21,7 @@ export function StorySection() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/watches/story-watch.svg"
-                alt="The AURELIA chronograph on the watchmaker's bench"
+                alt="The CHROVER chronograph on the watchmaker's bench"
                 loading="lazy"
                 className="w-full"
               />
@@ -42,7 +42,7 @@ export function StorySection() {
             Every second, <em className="text-gold-400">considered</em>
           </h2>
           <p className="mt-6 text-base leading-8 text-bone-400">
-            AURELIA began with a simple refusal — that fine watchmaking should
+            CHROVER began with a simple refusal — that fine watchmaking should
             be out of reach. In our Lahore atelier, each movement is decorated
             and regulated by hand, each case polished for hours, each dial
             checked in three kinds of light.

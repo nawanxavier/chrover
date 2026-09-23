@@ -105,7 +105,7 @@ export function ProductBuy({ product }: { product: Product }) {
         href={waLink(orderMsg)}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn mt-3 w-full border border-[#25D366]/40 text-[#43e087] hover:bg-[#25D366]/10"
+        className="btn mt-3 w-full border border-[#25D366]/40 text-[var(--color-wa)] hover:bg-[#25D366]/10"
       >
         <IconWhatsApp className="h-4 w-4" /> Buy instantly on WhatsApp
       </a>

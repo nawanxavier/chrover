@@ -1,12 +1,12 @@
 export const site = {
-  name: "AURELIA",
+  name: "CHROVER",
   tagline: "Time, Crafted in Pakistan",
-  domain: "aureliawatches.pk",
+  domain: "chrover.com",
 
   whatsappNumber: "923001234567",
   phone: "+92 300 1234567",
   phoneDisplay: "+92 300 1234 567",
-  email: "care@aureliawatches.pk",
+  email: "care@chrover.com",
 
   address: "Lahore, Pakistan",
 
@@ -14,9 +14,9 @@ export const site = {
   codNote: "Cash on Delivery available across Pakistan",
 
   socials: {
-    instagram: "https://instagram.com/aurelia.watches",
-    facebook: "https://facebook.com/aurelia.watches",
-    youtube: "https://youtube.com/@aurelia.watches",
+    instagram: "https://instagram.com/chrover.watches",
+    facebook: "https://facebook.com/chrover.watches",
+    youtube: "https://youtube.com/@chrover.watches",
   },
 
   hours: "Monday – Saturday · 9am – 9pm",

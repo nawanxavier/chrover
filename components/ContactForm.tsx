@@ -12,7 +12,7 @@ export function ContactForm() {
 
   const build = () => {
     const lines = [
-      "*New Enquiry — AURELIA Watches*",
+      "*New Enquiry — CHROVER Watches*",
       "",
       `Name: ${name || "—"}`,
       `Phone: ${phone || "—"}`,

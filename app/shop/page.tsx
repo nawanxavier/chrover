@@ -6,7 +6,7 @@ import { ProductCard } from "@/components/ProductCard";
 export const metadata: Metadata = {
   title: "Shop All Watches",
   description:
-    "Browse the complete AURELIA collection — dress, chronograph, diver, minimalist and haute horlogerie. Automatic movements, delivered across Pakistan on COD.",
+    "Browse the complete CHROVER collection — dress, chronograph, diver, minimalist and haute horlogerie. Automatic movements, delivered across Pakistan on COD.",
 };
 
 interface ShopPageProps {

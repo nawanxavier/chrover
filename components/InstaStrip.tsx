@@ -17,7 +17,7 @@ export function InstaStrip() {
       <Reveal className="mx-auto max-w-[1400px] px-4 py-20 sm:px-8">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
           <div>
-            <p className="eyebrow">@aurelia.watches</p>
+            <p className="eyebrow">@chrover.watches</p>
             <h2 className="display mt-2 text-3xl text-bone-50 sm:text-4xl">
               Join the <em className="text-gold-400">family</em>
             </h2>
@@ -46,7 +46,7 @@ export function InstaStrip() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`/images/watches/${slug}.svg`}
-                alt="AURELIA on Instagram"
+                alt="CHROVER on Instagram"
                 loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />

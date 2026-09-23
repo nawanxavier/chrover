@@ -1,32 +1,73 @@
 @import "tailwindcss";
 
+@custom-variant light (&:where(.light, .light *));
+
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
 
-  --color-ink-950: #0b0a08;
-  --color-ink-900: #100e0b;
-  --color-ink-800: #17130e;
-  --color-ink-700: #221c14;
-  --color-ink-600: #2e261a;
+  --color-ink-950: #0a0a0a;
+  --color-ink-900: #101010;
+  --color-ink-800: #161616;
+  --color-ink-700: #222222;
+  --color-ink-600: #303030;
 
-  --color-bone-50: #f8f4ea;
-  --color-bone-100: #f0ead9;
-  --color-bone-200: #e5dcc5;
-  --color-bone-300: #d3c7a8;
-  --color-bone-400: #b3a688;
-  --color-bone-500: #94886e;
-  --color-bone-600: #6f6653;
+  --color-bone-50: #f7f7f7;
+  --color-bone-100: #ededed;
+  --color-bone-200: #d6d6d6;
+  --color-bone-300: #a8a8a8;
+  --color-bone-400: #8c8c8c;
+  --color-bone-500: #6f6f6f;
+  --color-bone-600: #565656;
 
-  --color-gold-200: #f0ddab;
-  --color-gold-300: #e4c67c;
-  --color-gold-400: #d4af5a;
-  --color-gold-500: #c9a24b;
-  --color-gold-600: #a97f2e;
-  --color-gold-700: #7a5d1e;
-  --color-gold-900: #3e2f10;
+  --color-gold-200: #ffffff;
+  --color-gold-300: #f2f2f2;
+  --color-gold-400: #e0e0e0;
+  --color-gold-500: #b8b8b8;
+  --color-gold-600: #8a8a8a;
+  --color-gold-700: #5f5f5f;
+  --color-gold-900: #2f2f2f;
 
-  --shadow-glow: 0 0 90px 0 rgb(201 162 75 / 0.18);
+  --shadow-glow: 0 0 90px 0 color-mix(in srgb, var(--color-gold-500) 16%, transparent);
+}
+
+:root {
+  color-scheme: dark;
+  --hero-glow-1: #1c1c1c;
+  --hero-glow-2: #0e0e0e;
+  --color-wa: #43e087;
+}
+
+:root.light {
+  color-scheme: light;
+
+  --hero-glow-1: #ffffff;
+  --hero-glow-2: #f2f2f2;
+  --color-wa: #0f7a42;
+
+  --color-ink-950: #ffffff;
+  --color-ink-900: #fdfdfd;
+  --color-ink-800: #ffffff;
+  --color-ink-700: #e8e8e8;
+  --color-ink-600: #d6d6d6;
+
+  --color-bone-50: #111111;
+  --color-bone-100: #1a1a1a;
+  --color-bone-200: #2b2b2b;
+  --color-bone-300: #424242;
+  --color-bone-400: #575757;
+  --color-bone-500: #6f6f6f;
+  --color-bone-600: #8a8a8a;
+
+  --color-gold-200: #0a0a0a;
+  --color-gold-300: #1a1a1a;
+  --color-gold-400: #2b2b2b;
+  --color-gold-500: #0a0a0a;
+  --color-gold-600: #2e2e2e;
+  --color-gold-700: #4a4a4a;
+  --color-gold-900: #666666;
+
+  --shadow-glow: 0 0 90px 0 color-mix(in srgb, var(--color-gold-500) 18%, transparent);
 }
 
 html {
@@ -38,6 +79,7 @@ body {
   color: var(--color-bone-100);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  transition: background-color 0.35s ease, color 0.35s ease;
 }
 
 ::selection {
@@ -81,14 +123,14 @@ body {
 }
 
 .hairline-t {
-  border-top: 1px solid rgb(201 162 75 / 0.18);
+  border-top: 1px solid color-mix(in srgb, var(--color-gold-500) 18%, transparent);
 }
 .hairline-b {
-  border-bottom: 1px solid rgb(201 162 75 / 0.18);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-gold-500) 18%, transparent);
 }
 .hairline-x {
-  border-left: 1px solid rgb(201 162 75 / 0.14);
-  border-right: 1px solid rgb(201 162 75 / 0.14);
+  border-left: 1px solid color-mix(in srgb, var(--color-gold-500) 14%, transparent);
+  border-right: 1px solid color-mix(in srgb, var(--color-gold-500) 14%, transparent);
 }
 
 /* ---- Brand buttons ---- */
@@ -112,18 +154,23 @@ body {
   color: var(--color-ink-950);
 }
 .btn-gold:hover {
-  box-shadow: 0 10px 40px -8px rgb(201 162 75 / 0.55);
+  box-shadow: 0 10px 40px -8px color-mix(in srgb, var(--color-gold-500) 55%, transparent);
   transform: translateY(-1px);
 }
 
+:root.light .btn-gold {
+  background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-600) 55%, var(--color-gold-700));
+  color: #fffbf0;
+}
+
 .btn-ghost {
-  border: 1px solid rgb(201 162 75 / 0.45);
+  border: 1px solid color-mix(in srgb, var(--color-gold-500) 45%, transparent);
   color: var(--color-bone-100);
   background: transparent;
 }
 .btn-ghost:hover {
   border-color: var(--color-gold-400);
-  background: rgb(201 162 75 / 0.08);
+  background: color-mix(in srgb, var(--color-gold-500) 8%, transparent);
 }
 
 .btn-ink {
@@ -132,6 +179,11 @@ body {
 }
 .btn-ink:hover {
   background: var(--color-gold-300);
+}
+
+:root.light .btn-ink:hover {
+  background: var(--color-gold-400);
+  color: var(--color-bone-50);
 }
 
 .link-gold {
@@ -147,6 +199,16 @@ body {
 }
 .link-gold:hover {
   color: var(--color-gold-400);
+}
+
+/* ---- Hero ---- */
+
+.hero-bg {
+  background: radial-gradient(120% 90% at 68% 38%, var(--hero-glow-1) 0%, var(--hero-glow-2) 48%, var(--color-ink-950) 100%);
+}
+
+:root.light .hero-watch {
+  filter: drop-shadow(0 24px 50px rgb(22 18 13 / 0.28));
 }
 
 /* ---- Reveal on scroll ---- */
@@ -187,11 +249,11 @@ body {
 }
 
 .pattern-dots {
-  background-image: radial-gradient(rgb(201 162 75 / 0.14) 1px, transparent 1px);
+  background-image: radial-gradient(color-mix(in srgb, var(--color-gold-500) 14%, transparent) 1px, transparent 1px);
   background-size: 26px 26px;
 }
 
 .text-outline {
-  -webkit-text-stroke: 1px rgb(201 162 75 / 0.22);
+  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-gold-500) 22%, transparent);
   color: transparent;
 }

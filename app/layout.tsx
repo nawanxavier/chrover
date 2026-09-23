@@ -19,12 +19,12 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "AURELIA — Luxury Watches Crafted in Pakistan",
-    template: "%s · AURELIA",
+    default: "CHROVER — Luxury Watches Crafted in Pakistan",
+    template: "%s · CHROVER",
   },
   description:
-    "AURELIA is a Pakistani luxury watch maison. Automatic movements, sapphire crystal and hand-finished cases — delivered across Pakistan on Cash on Delivery.",
-  keywords: ["luxury watches", "automatic watches", "Pakistan watches", "AURELIA"],
+    "CHROVER is a Pakistani luxury watch maison. Automatic movements, sapphire crystal and hand-finished cases — delivered across Pakistan on Cash on Delivery.",
+  keywords: ["luxury watches", "automatic watches", "Pakistan watches", "CHROVER"],
 };
 
 export default function RootLayout({
@@ -37,8 +37,14 @@ export default function RootLayout({
       lang="en"
       data-scroll-behavior="smooth"
       className={`${inter.variable} ${playfair.variable}`}
+      suppressHydrationWarning
     >
       <body className="min-h-screen bg-ink-950 font-sans text-bone-100">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem("chrover-theme");if(t==="light"||(t!=="dark"&&matchMedia("(prefers-color-scheme: light)").matches)){document.documentElement.classList.add("light")}}catch(e){}`,
+          }}
+        />
         <CartProvider>
           <Header />
           <main>{children}</main>

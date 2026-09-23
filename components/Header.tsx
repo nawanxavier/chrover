@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { CATEGORIES } from "@/lib/products";
 import { site } from "@/lib/site";
 import { useCart } from "@/lib/cart";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   IconBag,
   IconChevron,
@@ -142,7 +143,7 @@ export function Header() {
           {/* Center: wordmark */}
           <Link href="/" className="group flex items-baseline gap-2">
             <span className="display text-2xl font-semibold tracking-[0.32em] text-bone-50 sm:text-[1.7rem]">
-              AURELIA
+              CHROVER
             </span>
             <span className="hidden h-px w-8 bg-gold-500/60 sm:block" />
             <span className="hidden text-[0.55rem] tracking-[0.3em] text-gold-500 uppercase sm:block">
@@ -168,6 +169,7 @@ export function Header() {
             >
               <IconUser className="h-5 w-5" />
             </Link>
+            <ThemeToggle />
             <button
               onClick={openCart}
               aria-label="Open cart"
@@ -201,7 +203,7 @@ export function Header() {
         >
           <div className="hairline-b flex items-center justify-between px-6 py-5">
             <span className="display text-lg font-semibold tracking-[0.32em] text-bone-50">
-              AURELIA
+              CHROVER
             </span>
             <button
               onClick={() => setOpen(false)}

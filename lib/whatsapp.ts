@@ -13,7 +13,7 @@ export function buildOrderMessage(items: CartItem[], total: number, subtotal: nu
   const freeShip = subtotal >= site.freeShippingThreshold;
 
   const lines = [
-    "*New Order — AURELIA Watches*",
+    "*New Order — CHROVER Watches*",
     "",
     rows,
     "",

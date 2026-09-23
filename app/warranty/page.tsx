@@ -7,7 +7,7 @@ import { IconArrow, IconReturn, IconShield } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Care & Warranty",
   description:
-    "AURELIA's 2-year international movement warranty, care advice and the registration that extends cover to three years.",
+    "CHROVER's 2-year international movement warranty, care advice and the registration that extends cover to three years.",
 };
 
 const care = [
@@ -61,7 +61,7 @@ export default function WarrantyPage() {
             Warranted for <em className="text-gold-400">three years</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-bone-400">
-            Every AURELIA carries a 2-year international warranty on its
+            Every CHROVER carries a 2-year international warranty on its
             movement. Register within 30 days and we extend that cover to a
             third year — because a watch this carefully made should be kept by
             us, not shelved by you.
@@ -92,7 +92,7 @@ export default function WarrantyPage() {
         </div>
         <Reveal className="mt-12 text-center">
           <Link
-            href={waLink("Hello AURELIA, I'd like to register my new watch.")}
+            href={waLink("Hello CHROVER, I'd like to register my new watch.")}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-gold"
