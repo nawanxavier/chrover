@@ -79,6 +79,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <p className="mt-2 text-sm tracking-wide text-bone-500 italic">
             {product.tagline}
           </p>
+          <p className="mt-2 text-xs tracking-[0.18em] text-bone-500 uppercase">
+            {product.reviews > 0
+              ? `${product.reviews} ${product.reviews === 1 ? "review" : "reviews"}`
+              : "No reviews yet"}
+            {product.soldOut && (
+              <span className="ml-3 inline-block bg-bone-900 px-2 py-0.5 text-bone-100">
+                Sold out
+              </span>
+            )}
+          </p>
 
           <p className="mt-7 border-l-2 border-gold-500/40 pl-5 text-base leading-8 text-bone-400">
             {product.description}

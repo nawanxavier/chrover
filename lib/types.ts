@@ -21,6 +21,8 @@ export interface Product {
   description: string;
   price: number;
   compareAtPrice?: number;
+  reviews: number;
+  soldOut?: boolean;
   images: string[];
   strap: string[];
   specs: Spec[];

@@ -2,11 +2,11 @@ import { Hero } from "@/components/Hero";
 import { CategoryGrid } from "@/components/CategoryGrid";
 import { ProductCarousel } from "@/components/ProductCarousel";
 import { StorySection } from "@/components/StorySection";
-import { featuredProducts, collectionProducts } from "@/lib/products";
+import { featuredProducts, bestsellerProducts } from "@/lib/products";
 
 export default function Home() {
   const selected = featuredProducts();
-  const boutique = collectionProducts("Boutique");
+  const best = bestsellerProducts();
 
   return (
     <>
@@ -24,11 +24,11 @@ export default function Home() {
       <StorySection />
 
       <ProductCarousel
-        eyebrow="Limited"
-        title="The boutique pieces"
-        ctaHref="/shop?collection=Boutique"
-        ctaLabel="View the boutique"
-        products={boutique}
+        eyebrow="Top rated"
+        title="Best sellers"
+        ctaHref="/shop"
+        ctaLabel="Shop best sellers"
+        products={best}
       />
     </>
   );

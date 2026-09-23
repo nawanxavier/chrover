@@ -1,4 +1,7 @@
-const nf = new Intl.NumberFormat("en-PK", { maximumFractionDigits: 0 });
+const nf = new Intl.NumberFormat("en-PK", {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
 
 export function formatPKR(amount: number) {
   return `Rs. ${nf.format(amount)}`;

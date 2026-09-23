@@ -15,6 +15,44 @@ export function ProductBuy({ product }: { product: Product }) {
 
   const off = pctOff(product.price, product.compareAtPrice);
 
+  if (product.soldOut) {
+    return (
+      <div>
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="display text-3xl text-gold-400">
+            {formatPKR(product.price)}
+          </span>
+          {product.compareAtPrice && (
+            <span className="text-base text-bone-500 line-through">
+              {formatPKR(product.compareAtPrice)}
+            </span>
+          )}
+        </div>
+
+        <div className="mt-8 border border-gold-500/25 bg-gold-500/10 px-5 py-6">
+          <p className="text-sm font-semibold tracking-[0.2em] text-gold-400 uppercase">
+            Sold out
+          </p>
+          <p className="mt-2 text-sm leading-6 text-bone-400">
+            This piece is currently unavailable. Check back soon, or message us
+            on WhatsApp and we&apos;ll let you know when it&apos;s back in stock.
+          </p>
+        </div>
+
+        <a
+          href={waLink(
+            `*Restock request — ${product.name}*\nPlease notify me when this watch is back in stock.`
+          )}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-ghost mt-4 w-full"
+        >
+          <IconWhatsApp className="h-4 w-4" /> Notify me on WhatsApp
+        </a>
+      </div>
+    );
+  }
+
   const orderMsg = buildOrderMessage(
     [
       {
