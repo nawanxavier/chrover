@@ -24,7 +24,7 @@ const care = [
   },
   {
     title: "Service",
-    text: "Standard quartz care applies: replace the battery when it slows and swap the strap when it shows wear — we can arrange both.",
+    text: "Replace the power cell when the watch slows and swap the strap when it shows wear — we can arrange both.",
   },
 ];
 
@@ -41,8 +41,8 @@ const steps = [
   },
   {
     n: "03",
-    title: "Pay on arrival",
-    text: "Inspect the watch carefully, then pay the courier. Cash on Delivery nationwide.",
+    title: "Pay advance",
+    text: "Settle via JazzCash, EasyPaisa or bank transfer and we dispatch the same day.",
   },
 ];
 
@@ -53,12 +53,12 @@ export default function WarrantyPage() {
         <div className="mx-auto max-w-3xl px-6 py-20 text-center sm:py-24">
           <p className="eyebrow">Delivery &amp; care</p>
           <h1 className="display mt-4 text-4xl text-bone-50 sm:text-5xl">
-            Pay when you&apos;re happy
+            Trusted delivery, every time
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-bone-400">
-            Order on WhatsApp, inspect your watch on delivery, and pay the
-            courier only after you&apos;re satisfied. Unworn pieces can be
-            returned or exchanged within 7 days.
+            Order on WhatsApp, settle by advance transfer via JazzCash,
+            EasyPaisa or bank transfer, and we dispatch the same day. Unworn
+            pieces can be returned or exchanged within 7 days.
           </p>
         </div>
       </section>

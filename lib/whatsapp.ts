@@ -23,7 +23,7 @@ export function buildOrderMessage(items: CartItem[], total: number, subtotal: nu
       : `_Delivery:_ ${formatPKR(300)} (free over ${formatPKR(site.freeShippingThreshold)})`,
     `_Total:_ *${formatPKR(total)}*`,
     "",
-    "Please confirm my order. Cash on Delivery preferred. Thank you!",
+    "Please confirm my order. I'll pay advance via JazzCash or Bank transfer. Thank you!",
   ];
 
   return lines.join("\n");

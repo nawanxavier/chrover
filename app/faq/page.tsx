@@ -16,12 +16,12 @@ const items = [
     a: "Yes. We deliver to every city and town in Pakistan. Delivery is complimentary on all orders over Rs. 5,000; below that a flat Rs. 300 applies. Orders typically arrive within 2–4 working days in major cities.",
   },
   {
-    q: "How does Cash on Delivery work?",
-    a: "Cash on Delivery is available nationwide. Simply choose 'COD' when you place your order on WhatsApp, pay the courier on arrival, and inspect your watch before paying.",
+    q: "How do payments work?",
+    a: "Pay secure advance via JazzCash, EasyPaisa or bank transfer. We confirm your order on WhatsApp, dispatch the same day and share tracking.",
   },
   {
-    q: "What kind of watches are these?",
-    a: "Our pieces are market-sourced stylists inspired by Cartier, Tissot, Rolex, Hublot, Patek Philippe and Audemars Piguet — master copies included. Each listing notes its build tier (e.g. Master AAA. Copy). They are reliable, everyday quartz pieces at honest prices.",
+    q: "What kind of watches do you offer?",
+    a: "Our selection covers Cartier, Tissot, Rolex, Hublot, Patek Philippe, Audemars Piguet and our own AURA line. Every piece is quality-checked for build and finish before dispatch, and arrives in a premium presentation box.",
   },
   {
     q: "What if I have a problem with my watch?",
@@ -41,7 +41,7 @@ const items = [
   },
   {
     q: "How do I care for my watch?",
-    a: "Wipe the case and strap with a soft cloth after wear and keep it away from water and strong magnets. Strap swaps and battery changes are quick to arrange on WhatsApp.",
+    a: "Wipe the case and strap with a soft cloth after wear and keep it away from water and strong magnets. Strap swaps and power-cell changes are quick to arrange on WhatsApp.",
   },
 ];
 

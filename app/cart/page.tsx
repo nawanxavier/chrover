@@ -23,8 +23,8 @@ export default function CartPage() {
         <p className="eyebrow">Your bag</p>
         <h1 className="display mt-3 text-4xl text-bone-50">Your bag is empty</h1>
         <p className="mt-4 max-w-md text-sm leading-7 text-bone-500">
-          Begin with a piece from the collection — delivered across Pakistan on
-          Cash on Delivery.
+          Begin with a piece from the collection — quality-checked and
+          delivered across Pakistan.
         </p>
         <Link href="/shop" className="btn btn-gold mt-8">
           Start shopping <IconArrow className="h-4 w-4" />
@@ -150,7 +150,7 @@ export default function CartPage() {
               <span>{formatPKR(total)}</span>
             </div>
             <p className="pt-1 text-[0.66rem] tracking-wider text-bone-500 uppercase">
-              {site.codNote} · JazzCash · Bank transfer
+              {site.codNote}
             </p>
           </div>
           <div className="px-7 pb-7">
@@ -160,14 +160,14 @@ export default function CartPage() {
             </a>
             <p className="mt-3 text-xs leading-5 text-bone-500">
               Your order summary opens in WhatsApp, ready to send. We confirm,
-              dispatch and you pay on delivery.
+              dispatch, and you settle by advance transfer on confirmation.
             </p>
             <div className="mt-6 grid grid-cols-3 gap-2 text-[0.6rem] leading-4 tracking-wider text-bone-500 uppercase">
               <span className="flex items-center gap-1.5">
                 <IconShield className="h-3.5 w-3.5 shrink-0 text-gold-500" /> Inspected
               </span>
               <span className="flex items-center gap-1.5">
-                <IconTruck className="h-3.5 w-3.5 shrink-0 text-gold-500" /> Nationwide COD
+                <IconTruck className="h-3.5 w-3.5 shrink-0 text-gold-500" /> Nationwide delivery
               </span>
               <span className="flex items-center gap-1.5">
                 <IconReturn className="h-3.5 w-3.5 shrink-0 text-gold-500" /> 7-day returns

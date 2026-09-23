@@ -21,13 +21,12 @@ export function StorySection() {
             Sourced smart. Sold honest.
           </h2>
           <p className="mt-6 max-w-md text-base leading-8 text-bone-400">
-            We buy watches from the local market at the best price we can find —
-            master copies and Swiss-likes included — and sell them to you at a
-            fair margin. Every piece is checked for function and condition
-            before it ships.
+            Every watch in our catalogue is hand-picked for build quality, dial
+            detail and finish — then inspected for function and condition
+            before it ships. You get quality you can trust, every time.
           </p>
           <p className="mt-4 max-w-md text-base leading-8 text-bone-400">
-            Some arrive with their original box; the rest we pack in our
+            Some pieces arrive with their original box; the rest we pack in our
             premium presentation box. What you see listed is exactly what you
             receive.
           </p>

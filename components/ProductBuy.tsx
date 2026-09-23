@@ -151,7 +151,7 @@ export function ProductBuy({ product }: { product: Product }) {
       {/* reassurance */}
       <ul className="mt-8 space-y-2.5 border-t border-gold-500/15 pt-6">
         {[
-          "Cash on Delivery available across Pakistan",
+          "Pay advance via JazzCash, EasyPaisa or Bank transfer",
           "Complimentary delivery on orders over Rs. 5,000",
           "Every piece inspected before dispatch",
           "Premium presentation box included",

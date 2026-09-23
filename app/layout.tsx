@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     template: "%s · CHROVER",
   },
   description:
-    "CHROVER sources Cartier, Tissot, Rolex, Hublot, Patek Philippe, Audemars Piguet and AURA timepieces from the local market and delivers them across Pakistan on Cash on Delivery.",
-  keywords: ["curated watches", "Pakistan watches", "COD watches", "CHROVER"],
+    "CHROVER offers a curated selection of Cartier, Tissot, Rolex, Hublot, Patek Philippe, Audemars Piguet and AURA timepieces — quality-checked, boxed and delivered across Pakistan.",
+  keywords: ["curated watches", "Pakistan watches", "premium watches Pakistan", "CHROVER"],
 };
 
 export default function RootLayout({

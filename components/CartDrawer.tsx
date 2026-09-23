@@ -159,7 +159,7 @@ export function CartDrawer() {
                   <IconShield className="h-3.5 w-3.5 shrink-0 text-gold-500" /> Inspected
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <IconTruck className="h-3.5 w-3.5 shrink-0 text-gold-500" /> Nationwide COD
+                  <IconTruck className="h-3.5 w-3.5 shrink-0 text-gold-500" /> Nationwide delivery
                 </span>
                 <span className="flex items-center gap-1.5">
                   <IconReturn className="h-3.5 w-3.5 shrink-0 text-gold-500" /> 7-day returns

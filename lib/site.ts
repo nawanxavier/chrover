@@ -11,7 +11,7 @@ export const site = {
   address: "Lahore, Pakistan",
 
   freeShippingThreshold: 5000,
-  codNote: "Cash on Delivery available across Pakistan",
+  codNote: "Pay advance via JazzCash, EasyPaisa or Bank transfer",
 
   socials: {
     instagram: "https://instagram.com/chrover.watches",

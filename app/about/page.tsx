@@ -3,20 +3,20 @@ import { IconArrow, IconReturn } from "@/components/icons";
 
 const values = [
   {
-    title: "Honest pricing",
-    text: "We buy wholesale from the local market and keep our margins fair and transparent.",
+    title: "Quality first",
+    text: "Every watch is hand-picked for build quality, dial detail and finish.",
   },
   {
     title: "Checked before dispatch",
-    text: "Every watch is inspected for function and condition before it ships.",
+    text: "Every piece is inspected for function and condition before it ships.",
   },
   {
     title: "Boxed, ready to gift",
     text: "Original box where we have it, otherwise our premium presentation box.",
   },
   {
-    title: "Pay when you're happy",
-    text: "Cash on delivery across Pakistan — inspect the watch, then pay the courier.",
+    title: "Secure payment",
+    text: "Pay by JazzCash, EasyPaisa or bank transfer — dispatch the same day.",
   },
 ];
 
@@ -38,8 +38,8 @@ const steps = [
   },
   {
     n: "04",
-    title: "Pay on arrival",
-    text: "Inspect the watch first, then pay the courier. Simple and safe.",
+    title: "Pay advance",
+    text: "Settle via JazzCash, EasyPaisa or bank transfer and we dispatch the same day.",
   },
 ];
 
@@ -51,13 +51,13 @@ export default function AboutPage() {
         <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-28">
           <p className="eyebrow">How we work</p>
           <h1 className="display mt-5 text-5xl leading-[1.05] text-bone-50 sm:text-6xl">
-            Bought smart. Sold honest.
+            Quality you can trust.
           </h1>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-bone-400">
-            We source watches from the local market — stylists from Cartier,
-            Tissot, Rolex, Hublot, Patek Philippe and Audemars Piguet, plus our
-            own AURA line, master copies included — and resell them to you with
-            a fair margin and no markup tricks.
+            A curated selection of timepieces inspired by Cartier, Tissot,
+            Rolex, Hublot, Patek Philippe and Audemars Piguet, plus our own
+            AURA line — each one quality-checked, boxed and delivered across
+            Pakistan.
           </p>
         </div>
       </section>
@@ -75,19 +75,19 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <p className="eyebrow">What we actually do</p>
+            <p className="eyebrow">What we hold to</p>
             <h2 className="display mt-3 text-3xl leading-tight text-bone-50 sm:text-4xl">
-              The sourcing is our job, not yours.
+              The checking is our job, not yours.
             </h2>
             <p className="mt-6 max-w-md text-base leading-8 text-bone-400">
-              We visit the bazar, buy in wholesale and take the sourcing risk so
-              you don&apos;t have to. Every watch is tested for function and
-              checked for condition before dispatch — no surprises at your door.
+              Every watch is hand-picked for build quality and finish, tested
+              for function and checked for condition before dispatch — no
+              surprises at your door.
             </p>
             <p className="mt-4 max-w-md text-base leading-8 text-bone-400">
               Some pieces arrive with their original box; others we pack in our
-              premium presentation box. Inspect it on delivery and pay only
-              when you&apos;re happy — cash on delivery nationwide.
+              premium presentation box. What we list is exactly what you
+              receive.
             </p>
           </div>
         </div>

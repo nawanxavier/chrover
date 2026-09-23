@@ -83,7 +83,7 @@ export default function ContactPage() {
             <div className="mt-10 max-w-md space-y-4">
               <InfoRow label="Hours" value={site.hours} />
               <InfoRow label="Showroom" value={`${site.address}, by appointment`} />
-              <InfoRow label="Delivery" value="Nationwide, COD available" />
+              <InfoRow label="Delivery" value="Nationwide, 2–4 working days" />
             </div>
             <Link href="/faq" className="link-gold mt-10">
               Browse the FAQ <IconArrow className="h-3.5 w-3.5" />

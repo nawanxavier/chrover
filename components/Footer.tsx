@@ -46,8 +46,8 @@ export function Footer() {
           </p>
           <p className="mt-4 max-w-xs text-sm leading-7 text-bone-400">
             Curated timepieces — Cartier, Tissot, Rolex, Hublot, Patek
-            Philippe, Audemars Piguet and AURA — delivered across Pakistan on
-            Cash on Delivery.
+            Philippe, Audemars Piguet and AURA — quality-checked, boxed and
+            delivered across Pakistan.
           </p>
           <div className="mt-7 flex items-center gap-5">
             {[
@@ -138,7 +138,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-3 text-[0.66rem] tracking-[0.14em] text-bone-500 uppercase md:flex-row">
           <p>© {new Date().getFullYear()} CHROVER. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <span>COD · JazzCash · Bank transfer</span>
+            <span>JazzCash · EasyPaisa · Bank transfer</span>
             <Link href="/about" className="hover:text-bone-100">
               Privacy
             </Link>

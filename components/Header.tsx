@@ -121,7 +121,7 @@ export function Header() {
             </ul>
           </nav>
           <div className="hairline-t px-6 py-6 text-[0.68rem] tracking-[0.18em] text-bone-500 uppercase">
-            Free delivery over Rs 5,000 · COD nationwide
+            Free delivery over Rs 5,000 · JazzCash & bank transfer
           </div>
         </div>
       </div>
