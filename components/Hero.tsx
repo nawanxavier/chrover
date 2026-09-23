@@ -7,12 +7,12 @@ export function Hero() {
         {/* Copy */}
         <div>
           <h1 className="display text-[2.75rem] text-bone-50 sm:text-6xl">
-            Automatic watches, made deliberately in Pakistan.
+            Curated timepieces, honest prices.
           </h1>
           <p className="mt-6 max-w-md text-base leading-8 text-bone-400">
-            Every CHROVER is a mechanical automatic movement, assembled and
-            regulated by hand in our Lahore atelier. Sapphire crystal, 316L
-            steel, and a two-year warranty on every piece.
+            A focused selection of Cartier, Tissot, Rolex, Hublot, Patek
+            Philippe, Audemars Piguet and AURA. Every piece is inspected before
+            dispatch and shipped with cash on delivery nationwide.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3">
@@ -25,7 +25,7 @@ export function Hero() {
           </div>
 
           <p className="mt-12 border-t border-gold-500/15 pt-5 text-[0.66rem] tracking-[0.18em] text-bone-500 uppercase">
-            Free delivery over Rs 5,000 — COD nationwide — 2-year international warranty
+            Free delivery over Rs 5,000 — COD nationwide — 7-day returns
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export function Hero() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/watches/hero-watch.svg"
-            alt="CHROVER automatic watch"
+            alt="Featured timepiece"
             width={520}
             height={520}
             className="w-full"

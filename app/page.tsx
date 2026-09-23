@@ -11,7 +11,14 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <CategoryGrid />
+
+      <ProductCarousel
+        eyebrow="Top rated"
+        title="Best sellers"
+        ctaHref="/shop"
+        ctaLabel="View all"
+        products={best}
+      />
 
       <ProductCarousel
         eyebrow="Selected"
@@ -21,15 +28,9 @@ export default function Home() {
         products={selected}
       />
 
-      <StorySection />
+      <CategoryGrid />
 
-      <ProductCarousel
-        eyebrow="Top rated"
-        title="Best sellers"
-        ctaHref="/shop"
-        ctaLabel="Shop best sellers"
-        products={best}
-      />
+      <StorySection />
     </>
   );
 }

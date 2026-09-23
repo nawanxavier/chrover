@@ -14,7 +14,7 @@ export function CategoryGrid() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 xl:grid-cols-5">
+      <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 xl:grid-cols-4">
         {CATEGORIES.map((c) => (
           <Link key={c.id} href={`/shop?category=${c.id}`} className="group">
             <div className="aspect-square overflow-hidden border border-gold-500/10 bg-ink-900">
