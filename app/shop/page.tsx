@@ -6,7 +6,7 @@ import { ProductCard } from "@/components/ProductCard";
 export const metadata: Metadata = {
   title: "Shop All Watches",
   description:
-    "Browse the complete CHROVER collection — dress, chronograph, diver, minimalist and haute horlogerie. Automatic movements, delivered across Pakistan on COD.",
+    "Browse the complete CHROVER collection — dress, chronograph, diver and minimalist lines. Automatic movements, delivered across Pakistan on COD.",
 };
 
 interface ShopPageProps {
@@ -93,9 +93,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
 
         {filtered.length === 0 ? (
           <div className="py-24 text-center">
-            <p className="display text-2xl text-bone-200">
-              Nothing here <em className="text-gold-400">yet</em>
-            </p>
+            <p className="display text-2xl text-bone-200">Nothing here yet</p>
             <Link href="/shop" className="btn btn-gold mt-6">
               View all watches
             </Link>

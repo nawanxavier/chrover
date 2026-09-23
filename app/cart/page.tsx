@@ -7,7 +7,6 @@ import { buildOrderMessage } from "@/lib/whatsapp";
 import { site, waLink } from "@/lib/site";
 import {
   IconArrow,
-  IconBag,
   IconClose,
   IconReturn,
   IconShield,
@@ -20,16 +19,12 @@ export default function CartPage() {
 
   if (items.length === 0) {
     return (
-      <div className="mx-auto flex max-w-xl flex-col items-center px-6 py-28 text-center">
-        <div className="flex h-20 w-20 items-center justify-center rounded-full border border-gold-500/25">
-          <IconBag className="h-9 w-9 text-gold-500" />
-        </div>
-        <h1 className="display mt-8 text-4xl text-bone-50">
-          It&apos;s a little <em className="text-gold-400">empty</em> here
-        </h1>
-        <p className="mt-4 text-sm leading-7 text-bone-500">
-          Your bag is currently empty. Begin with a piece from the collection —
-          delivered across Pakistan on Cash on Delivery.
+      <div className="mx-auto flex max-w-xl flex-col items-start px-6 py-28">
+        <p className="eyebrow">Your bag</p>
+        <h1 className="display mt-3 text-4xl text-bone-50">Your bag is empty</h1>
+        <p className="mt-4 max-w-md text-sm leading-7 text-bone-500">
+          Begin with a piece from the collection — delivered across Pakistan on
+          Cash on Delivery.
         </p>
         <Link href="/shop" className="btn btn-gold mt-8">
           Start shopping <IconArrow className="h-4 w-4" />
@@ -53,7 +48,7 @@ export default function CartPage() {
 
       <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
         <h1 className="display text-4xl text-bone-50 sm:text-5xl">
-          Your bag <em className="text-gold-400">({items.length})</em>
+          Your bag ({items.length})
         </h1>
         <Link href="/shop" className="link-gold">
           Continue shopping <IconArrow className="h-3.5 w-3.5" />

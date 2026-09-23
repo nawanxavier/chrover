@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Reveal } from "@/components/Reveal";
 import { waLink } from "@/lib/site";
-import { IconArrow, IconReturn, IconShield } from "@/components/icons";
+import { IconArrow, IconReturn } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Care & Warranty",
@@ -13,15 +12,15 @@ export const metadata: Metadata = {
 const care = [
   {
     title: "Wear",
-    text: "Watches are made to be worn daily. An automatic keeps best time when it's on the wrist; if you rest it, wind it every day or so.",
+    text: "Watches are made to be worn daily. An automatic keeps best time on the wrist; if you rest it, wind it every day or so.",
   },
   {
     title: "Wipe",
-    text: "After wear, wipe the case and bracelet with a soft, dry cloth. For leather, a quick breath of fresh air at night prevents moisture build-up.",
+    text: "After wear, wipe the case and bracelet with a soft, dry cloth. For leather, fresh air overnight prevents moisture build-up.",
   },
   {
     title: "Avoid",
-    text: "Strong magnets, harsh chemicals and hot showers. Our divers are water-resistant to 30 ATM; dress pieces are for splashes, not laps.",
+    text: "Strong magnets, harsh chemicals and hot showers. Our divers are water-resistant to 30 ATM; dress pieces are for splashes.",
   },
   {
     title: "Service",
@@ -50,47 +49,36 @@ const steps = [
 export default function WarrantyPage() {
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-gold-500/15">
-        <div className="absolute inset-0 bg-[radial-gradient(100%_100%_at_50%_0%,#20190e_0%,#100d09_55%,#0b0a08_100%)]" />
-        <Reveal className="relative mx-auto max-w-3xl px-6 py-24 text-center">
-          <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full border border-gold-500/30">
-            <IconShield className="h-6 w-6 text-gold-400" />
-          </div>
-          <p className="eyebrow">Promise of the maison</p>
+      <section className="hairline-b border-b border-gold-500/15">
+        <div className="mx-auto max-w-3xl px-6 py-20 text-center sm:py-24">
+          <p className="eyebrow">Care & warranty</p>
           <h1 className="display mt-4 text-4xl text-bone-50 sm:text-5xl">
-            Warranted for <em className="text-gold-400">three years</em>
+            Warranted for three years
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-bone-400">
             Every CHROVER carries a 2-year international warranty on its
             movement. Register within 30 days and we extend that cover to a
-            third year — because a watch this carefully made should be kept by
-            us, not shelved by you.
+            third year.
           </p>
-        </Reveal>
+        </div>
       </section>
 
       {/* Steps */}
       <section className="mx-auto max-w-[1400px] px-4 py-20 sm:px-8">
-        <Reveal className="mb-12 text-center">
+        <div className="mb-12">
           <p className="eyebrow">Extend your cover</p>
-          <h2 className="display mt-2 text-3xl text-bone-50 sm:text-4xl">
-            Three steps, <em className="text-gold-400">three years</em>
-          </h2>
-        </Reveal>
+          <h2 className="display mt-2 text-3xl text-bone-50">Three steps, three years</h2>
+        </div>
         <div className="grid gap-10 md:grid-cols-3">
-          {steps.map((s, i) => (
-            <Reveal key={s.n} delay={i * 90}>
-              <div className="relative h-full border border-gold-500/15 bg-ink-900/50 p-8 pt-10">
-                <span className="display absolute -top-5 left-8 bg-ink-950 px-2 text-3xl text-gold-500">
-                  {s.n}
-                </span>
-                <p className="display mt-2 text-lg text-bone-100">{s.title}</p>
-                <p className="mt-3 text-sm leading-7 text-bone-500">{s.text}</p>
-              </div>
-            </Reveal>
+          {steps.map((s) => (
+            <div key={s.n} className="hairline-t pt-6">
+              <p className="text-sm text-bone-500">{s.n}</p>
+              <p className="mt-3 text-lg font-medium text-bone-100">{s.title}</p>
+              <p className="mt-3 text-sm leading-7 text-bone-500">{s.text}</p>
+            </div>
           ))}
         </div>
-        <Reveal className="mt-12 text-center">
+        <div className="mt-12">
           <Link
             href={waLink("Hello CHROVER, I'd like to register my new watch.")}
             target="_blank"
@@ -99,26 +87,22 @@ export default function WarrantyPage() {
           >
             Register my watch <IconArrow className="h-4 w-4" />
           </Link>
-        </Reveal>
+        </div>
       </section>
 
       {/* Care */}
-      <section className="border-y border-gold-500/15 bg-ink-900/40">
+      <section className="hairline-t hairline-b border-y border-gold-500/15">
         <div className="mx-auto max-w-[1400px] px-4 py-20 sm:px-8">
-          <Reveal className="mb-12 text-center">
+          <div className="mb-12">
             <p className="eyebrow">Aftercare</p>
-            <h2 className="display mt-2 text-3xl text-bone-50 sm:text-4xl">
-              A little care, <em className="text-gold-400">measured</em>
-            </h2>
-          </Reveal>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {care.map((c, i) => (
-              <Reveal key={c.title} delay={i * 80}>
-                <div className="hairline-t h-full pt-5">
-                  <p className="display text-lg text-gold-400">{c.title}</p>
-                  <p className="mt-3 text-sm leading-7 text-bone-500">{c.text}</p>
-                </div>
-              </Reveal>
+            <h2 className="display mt-2 text-3xl text-bone-50">Four habits</h2>
+          </div>
+          <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+            {care.map((c) => (
+              <div key={c.title} className="hairline-t pt-6">
+                <p className="text-lg font-medium text-bone-100">{c.title}</p>
+                <p className="mt-3 text-sm leading-7 text-bone-500">{c.text}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -126,24 +110,20 @@ export default function WarrantyPage() {
 
       {/* Returns */}
       <section className="mx-auto max-w-[1400px] px-4 py-20 sm:px-8">
-        <Reveal>
-          <div className="grid items-center gap-10 rounded border border-gold-500/15 bg-ink-900/50 p-10 lg:grid-cols-[auto_1fr_auto] lg:p-14">
-            <IconReturn className="h-10 w-10 text-gold-500" />
-            <div>
-              <h2 className="display text-2xl text-bone-100">
-                Seven days to decide
-              </h2>
-              <p className="mt-3 max-w-xl text-sm leading-7 text-bone-500">
-                Unworn, untouched, still sealed in its coffret? Return or
-                exchange within 7 days of delivery — no questions asked. Straps
-                and bracelets, once worn, are non-returnable for hygiene.
-              </p>
-            </div>
-            <Link href="/contact" className="btn btn-ghost">
-              Start a return
-            </Link>
+        <div className="grid items-center gap-8 border border-gold-500/15 px-10 py-12 sm:px-14 lg:grid-cols-[1fr_auto]">
+          <div>
+            <h2 className="display text-2xl text-bone-100">Seven days to decide</h2>
+            <p className="mt-3 max-w-xl text-sm leading-7 text-bone-500">
+              Unworn, untouched and still sealed in its box? Return or exchange
+              within 7 days of delivery. Straps and bracelets, once worn, are
+              non-returnable for hygiene.
+            </p>
           </div>
-        </Reveal>
+          <Link href="/contact" className="btn btn-ghost">
+            <IconReturn className="h-4 w-4" />
+            Start a return
+          </Link>
+        </div>
       </section>
     </div>
   );

@@ -121,9 +121,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <section className="mt-24">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="eyebrow">Complete the story</p>
+              <p className="eyebrow">Related</p>
               <h2 className="display mt-2 text-3xl text-bone-50">
-                You may also <em className="text-gold-400">admire</em>
+                You may also like
               </h2>
             </div>
             <Link

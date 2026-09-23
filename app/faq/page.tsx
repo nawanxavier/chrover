@@ -52,11 +52,11 @@ export default function FaqPage() {
         <div className="mx-auto max-w-3xl px-6 pt-16 pb-12 text-center">
           <p className="eyebrow">Good to know</p>
           <h1 className="display mt-3 text-4xl text-bone-50 sm:text-5xl">
-            Asked, and <em className="text-gold-400">answered</em>
+            Asked, and answered
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-bone-400">
             Everything before the first winding. Can&apos;t find your answer?
-            The concierge is one message away.
+            Message us directly.
           </p>
         </div>
       </section>
@@ -64,10 +64,8 @@ export default function FaqPage() {
       <section className="mx-auto max-w-3xl px-6 py-16">
         <FaqAccordion items={items} />
 
-        <div className="mt-14 border border-gold-500/20 bg-ink-900/60 p-8 text-center">
-          <p className="display text-2xl text-bone-100">
-            Still curious? <em className="text-gold-400">Ask directly</em>
-          </p>
+        <div className="mt-14 border border-gold-500/15 px-8 py-10 text-center">
+          <p className="text-2xl text-bone-100">Still curious?</p>
           <p className="mt-2 text-sm text-bone-500">
             Replies within minutes during working hours.
           </p>
@@ -77,7 +75,7 @@ export default function FaqPage() {
             rel="noopener noreferrer"
             className="btn btn-gold mt-6"
           >
-            Message the concierge <IconArrow className="h-4 w-4" />
+            Message us <IconArrow className="h-4 w-4" />
           </Link>
         </div>
       </section>

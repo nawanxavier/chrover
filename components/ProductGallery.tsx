@@ -8,14 +8,13 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
   return (
     <div className="flex flex-col-reverse gap-4 sm:flex-col">
       {/* Main image */}
-      <div className="relative overflow-hidden border border-gold-500/10 bg-ink-800">
+      <div className="relative overflow-hidden border border-gold-500/10 bg-ink-900">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={images[active]}
           alt={`${name} — view ${active + 1}`}
           className="aspect-square w-full object-cover"
         />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_40%,transparent_40%,rgba(0,0,0,0.25)_100%)]" />
       </div>
 
       {/* Thumbs */}

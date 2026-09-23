@@ -9,15 +9,15 @@ export function NewsletterForm() {
 
   return (
     <form
-      className="flex w-full max-w-md items-stretch gap-0"
+      className="flex w-full max-w-md flex-row items-end gap-4"
       onSubmit={(e) => {
         e.preventDefault();
         if (email.trim()) setDone(true);
       }}
     >
       {done ? (
-        <p className="h-12 flex-1 flex items-center border border-gold-500/40 bg-ink-900 px-4 text-sm text-gold-400">
-          Welcome to the maison. Watch your inbox.
+        <p className="hairline-b pb-3 text-sm text-bone-500">
+          Thank you — you&apos;re subscribed.
         </p>
       ) : (
         <>
@@ -28,9 +28,12 @@ export function NewsletterForm() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your email address"
             aria-label="Email address"
-            className="h-12 flex-1 border border-gold-500/30 bg-ink-900 px-4 text-sm text-bone-100 placeholder:text-bone-500 focus:border-gold-400 focus:outline-none"
+            className="hairline-b flex-1 bg-transparent pb-3 text-sm text-bone-100 transition-colors placeholder:text-bone-500 focus:outline-none"
           />
-          <button type="submit" className="btn btn-gold h-12">
+          <button
+            type="submit"
+            className="link-gold shrink-0 pb-3"
+          >
             Subscribe <IconArrow className="h-3.5 w-3.5" />
           </button>
         </>

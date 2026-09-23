@@ -6,7 +6,7 @@ import { formatPKR, pctOff } from "@/lib/format";
 import { buildOrderMessage } from "@/lib/whatsapp";
 import { waLink } from "@/lib/site";
 import type { Product } from "@/lib/types";
-import { IconBag, IconShield, IconWhatsApp } from "@/components/icons";
+import { IconBag, IconWhatsApp } from "@/components/icons";
 
 export function ProductBuy({ product }: { product: Product }) {
   const { addItem } = useCart();
@@ -105,25 +105,25 @@ export function ProductBuy({ product }: { product: Product }) {
         href={waLink(orderMsg)}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn mt-3 w-full border border-[#25D366]/40 text-[var(--color-wa)] hover:bg-[#25D366]/10"
+        className="btn btn-ghost mt-3 w-full"
       >
         <IconWhatsApp className="h-4 w-4" /> Buy instantly on WhatsApp
       </a>
 
       {/* reassurance */}
-      <div className="mt-8 space-y-3 border-t border-gold-500/15 pt-6">
+      <ul className="mt-8 space-y-2.5 border-t border-gold-500/15 pt-6">
         {[
           "Cash on Delivery available across Pakistan",
           "Complimentary delivery on orders over Rs. 5,000",
           "2-year international movement warranty",
           "7-day easy returns on unworn pieces",
         ].map((line) => (
-          <p key={line} className="flex items-center gap-3 text-sm text-bone-400">
-            <IconShield className="h-4 w-4 shrink-0 text-gold-500" />
+          <li key={line} className="flex gap-3 text-sm leading-6 text-bone-500">
+            <span className="text-bone-400">—</span>
             {line}
-          </p>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

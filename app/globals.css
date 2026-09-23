@@ -4,7 +4,7 @@
 
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-display: var(--font-sans);
 
   --color-ink-950: #0a0a0a;
   --color-ink-900: #101010;
@@ -27,22 +27,15 @@
   --color-gold-600: #8a8a8a;
   --color-gold-700: #5f5f5f;
   --color-gold-900: #2f2f2f;
-
-  --shadow-glow: 0 0 90px 0 color-mix(in srgb, var(--color-gold-500) 16%, transparent);
 }
 
 :root {
   color-scheme: dark;
-  --hero-glow-1: #1c1c1c;
-  --hero-glow-2: #0e0e0e;
   --color-wa: #43e087;
 }
 
 :root.light {
   color-scheme: light;
-
-  --hero-glow-1: #ffffff;
-  --hero-glow-2: #f2f2f2;
   --color-wa: #0f7a42;
 
   --color-ink-950: #ffffff;
@@ -66,8 +59,6 @@
   --color-gold-600: #2e2e2e;
   --color-gold-700: #4a4a4a;
   --color-gold-900: #666666;
-
-  --shadow-glow: 0 0 90px 0 color-mix(in srgb, var(--color-gold-500) 18%, transparent);
 }
 
 html {
@@ -79,17 +70,17 @@ body {
   color: var(--color-bone-100);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  transition: background-color 0.35s ease, color 0.35s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
-  background-color: var(--color-gold-500);
+  background-color: var(--color-bone-100);
   color: var(--color-ink-950);
 }
 
 *:focus-visible {
-  outline: 2px solid var(--color-gold-400);
-  outline-offset: 2px;
+  outline: 1px solid var(--color-bone-400);
+  outline-offset: 3px;
 }
 
 ::-webkit-scrollbar {
@@ -97,144 +88,107 @@ body {
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-ink-900);
+  background: var(--color-ink-950);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-ink-600);
-  border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gold-600);
+  background: var(--color-bone-500);
 }
 
-/* ---- Typography helpers ---- */
-
-.eyebrow {
-  font-size: 0.7rem;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-  color: var(--color-gold-500);
-  font-weight: 600;
-}
+/* ---- Typography ---- */
 
 .display {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
   font-feature-settings: "liga" 0;
 }
 
+.eyebrow {
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-bone-500);
+  font-weight: 500;
+}
+
 .hairline-t {
-  border-top: 1px solid color-mix(in srgb, var(--color-gold-500) 18%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--color-gold-500) 16%, transparent);
 }
 .hairline-b {
-  border-bottom: 1px solid color-mix(in srgb, var(--color-gold-500) 18%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-gold-500) 16%, transparent);
 }
 .hairline-x {
   border-left: 1px solid color-mix(in srgb, var(--color-gold-500) 14%, transparent);
   border-right: 1px solid color-mix(in srgb, var(--color-gold-500) 14%, transparent);
 }
 
-/* ---- Brand buttons ---- */
+/* ---- Buttons ---- */
 
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  padding: 0.95rem 1.9rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.28em;
+  gap: 0.55rem;
+  padding: 0.9rem 1.7rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-weight: 600;
-  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  font-weight: 500;
+  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, var(--color-gold-300), var(--color-gold-500) 55%, var(--color-gold-600));
+  background-color: var(--color-bone-100);
   color: var(--color-ink-950);
 }
 .btn-gold:hover {
-  box-shadow: 0 10px 40px -8px color-mix(in srgb, var(--color-gold-500) 55%, transparent);
-  transform: translateY(-1px);
-}
-
-:root.light .btn-gold {
-  background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-600) 55%, var(--color-gold-700));
-  color: #fffbf0;
+  background-color: var(--color-bone-50);
 }
 
 .btn-ghost {
-  border: 1px solid color-mix(in srgb, var(--color-gold-500) 45%, transparent);
+  border-color: var(--color-bone-400);
   color: var(--color-bone-100);
-  background: transparent;
+  background-color: transparent;
 }
 .btn-ghost:hover {
-  border-color: var(--color-gold-400);
-  background: color-mix(in srgb, var(--color-gold-500) 8%, transparent);
+  border-color: var(--color-bone-100);
 }
 
 .btn-ink {
-  background: var(--color-bone-100);
-  color: var(--color-ink-950);
+  background-color: var(--color-ink-800);
+  color: var(--color-bone-100);
 }
 .btn-ink:hover {
-  background: var(--color-gold-300);
-}
-
-:root.light .btn-ink:hover {
-  background: var(--color-gold-400);
-  color: var(--color-bone-50);
+  background-color: var(--color-ink-700);
 }
 
 .link-gold {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.28em;
+  gap: 0.4rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-weight: 600;
-  color: var(--color-bone-200);
-  transition: color 0.25s;
+  font-weight: 500;
+  color: var(--color-bone-300);
+  transition: color 0.25s ease;
 }
 .link-gold:hover {
-  color: var(--color-gold-400);
-}
-
-/* ---- Hero ---- */
-
-.hero-bg {
-  background: radial-gradient(120% 90% at 68% 38%, var(--hero-glow-1) 0%, var(--hero-glow-2) 48%, var(--color-ink-950) 100%);
-}
-
-:root.light .hero-watch {
-  filter: drop-shadow(0 24px 50px rgb(22 18 13 / 0.28));
-}
-
-/* ---- Reveal on scroll ---- */
-
-.reveal {
-  opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.reveal.is-in {
-  opacity: 1;
-  transform: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-  html {
-    scroll-behavior: auto;
-  }
+  color: var(--color-bone-100);
 }
 
 /* ---- Misc ---- */
+
+.reveal {
+  opacity: 1;
+  transform: none;
+}
 
 .no-scrollbar {
   scrollbar-width: none;
@@ -244,16 +198,19 @@ body {
 }
 
 .mask-fade-x {
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: none;
+  mask-image: none;
 }
 
 .pattern-dots {
-  background-image: radial-gradient(color-mix(in srgb, var(--color-gold-500) 14%, transparent) 1px, transparent 1px);
-  background-size: 26px 26px;
+  background-image: none;
+}
+
+.hero-bg {
+  background-color: var(--color-ink-950);
 }
 
 .text-outline {
-  -webkit-text-stroke: 1px color-mix(in srgb, var(--color-gold-500) 22%, transparent);
-  color: transparent;
+  -webkit-text-stroke: 0;
+  color: inherit;
 }

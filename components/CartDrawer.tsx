@@ -50,20 +50,12 @@ export function CartDrawer() {
 
         {/* body */}
         {items.length === 0 ? (
-          <div className="flex flex-1 flex-col items-center justify-center gap-5 px-8 text-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-gold-500/25">
-              <IconBag className="h-7 w-7 text-gold-500" />
-            </div>
-            <div>
-              <p className="display text-2xl">
-                It&apos;s a little <em className="text-gold-400">empty</em> here
-              </p>
-              <p className="mt-2 text-sm text-bone-500">
-                Your bag is currently empty. Begin with a piece from the
-                collection.
-              </p>
-            </div>
-            <Link href="/shop" onClick={closeCart} className="btn btn-gold mt-2">
+          <div className="flex flex-1 flex-col justify-center gap-5 px-8">
+            <p className="display text-2xl text-bone-100">Your bag is empty</p>
+            <p className="max-w-xs text-sm leading-7 text-bone-500">
+              Begin with a piece from the collection.
+            </p>
+            <Link href="/shop" onClick={closeCart} className="btn btn-gold mt-2 w-fit">
               Start shopping
             </Link>
           </div>
