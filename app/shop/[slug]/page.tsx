@@ -119,9 +119,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
 
           <p className="mt-6 text-xs leading-6 text-bone-500">
-            Delivered in the signature CHROVER coffret with certificate of
-            authenticity. <span className="text-gold-500">2-year warranty</span>{" "}
-            included — register your movement within 30 days to extend it to 3.
+            Every piece is inspected before dispatch and delivered in a premium
+            presentation box. Message us on WhatsApp for stock, dispatch or
+            returns questions.
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ const specs = (
     { label: "Model", value: model },
     { label: "Case", value: case_ },
     { label: "Strap", value: strap },
-    { label: "Movement", value: "Quartz" },
+    { label: "Movement", value: "Premium quality" },
   ] satisfies Spec[];
 
 export const CATEGORIES: Category[] = [

@@ -11,7 +11,7 @@ import {
 
 const maisonLinks = [
   { label: "About", href: "/about" },
-  { label: "Care & Warranty", href: "/warranty" },
+  { label: "Care & Returns", href: "/warranty" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
@@ -45,8 +45,9 @@ export function Footer() {
             CHROVER
           </p>
           <p className="mt-4 max-w-xs text-sm leading-7 text-bone-400">
-            Automatic watches, assembled and regulated by hand in Lahore and
-            delivered across Pakistan.
+            Curated timepieces — Cartier, Tissot, Rolex, Hublot, Patek
+            Philippe, Audemars Piguet and AURA — delivered across Pakistan on
+            Cash on Delivery.
           </p>
           <div className="mt-7 flex items-center gap-5">
             {[

@@ -10,7 +10,7 @@ import { IconBag, IconClose, IconMenu } from "@/components/icons";
 const NAV_LINKS = [
   { label: "Shop", href: "/shop" },
   { label: "About", href: "/about" },
-  { label: "Care & Warranty", href: "/warranty" },
+  { label: "Care & Returns", href: "/warranty" },
   { label: "Contact", href: "/contact" },
 ];
 

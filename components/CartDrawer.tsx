@@ -156,7 +156,7 @@ export function CartDrawer() {
 
               <div className="grid grid-cols-3 gap-2 text-[0.62rem] leading-4 tracking-wider text-bone-500 uppercase">
                 <span className="flex items-center gap-1.5">
-                  <IconShield className="h-3.5 w-3.5 shrink-0 text-gold-500" /> 2-yr warranty
+                  <IconShield className="h-3.5 w-3.5 shrink-0 text-gold-500" /> Inspected
                 </span>
                 <span className="flex items-center gap-1.5">
                   <IconTruck className="h-3.5 w-3.5 shrink-0 text-gold-500" /> Nationwide COD

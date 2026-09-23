@@ -14,12 +14,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "CHROVER — Luxury Watches Crafted in Pakistan",
+    default: "CHROVER — Curated Timepieces, Delivered Across Pakistan",
     template: "%s · CHROVER",
   },
   description:
-    "CHROVER is a Pakistani luxury watch maison. Automatic movements, sapphire crystal and hand-finished cases — delivered across Pakistan on Cash on Delivery.",
-  keywords: ["luxury watches", "automatic watches", "Pakistan watches", "CHROVER"],
+    "CHROVER sources Cartier, Tissot, Rolex, Hublot, Patek Philippe, Audemars Piguet and AURA timepieces from the local market and delivers them across Pakistan on Cash on Delivery.",
+  keywords: ["curated watches", "Pakistan watches", "COD watches", "CHROVER"],
 };
 
 export default function RootLayout({

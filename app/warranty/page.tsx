@@ -4,45 +4,45 @@ import { waLink } from "@/lib/site";
 import { IconArrow, IconReturn } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Care & Warranty",
+  title: "Delivery, Returns & Care",
   description:
-    "CHROVER's 2-year international movement warranty, care advice and the registration that extends cover to three years.",
+    "How CHROVER delivers, the 7-day return window, and simple care advice for your timepiece.",
 };
 
 const care = [
   {
     title: "Wear",
-    text: "Watches are made to be worn daily. An automatic keeps best time on the wrist; if you rest it, wind it every day or so.",
+    text: "Watches are made to be worn daily. If you rest one, just set the time and strap it on again — no winding rituals required.",
   },
   {
     title: "Wipe",
-    text: "After wear, wipe the case and bracelet with a soft, dry cloth. For leather, fresh air overnight prevents moisture build-up.",
+    text: "After wear, wipe the case and strap with a soft, dry cloth. For leather, fresh air overnight prevents moisture build-up.",
   },
   {
     title: "Avoid",
-    text: "Strong magnets, harsh chemicals and hot showers. Our divers are water-resistant to 30 ATM; dress pieces are for splashes.",
+    text: "Keep your watch away from water, strong magnets and harsh chemicals. These pieces are not designed to be submerged.",
   },
   {
     title: "Service",
-    text: "We recommend a full service every 4–5 years. A scheduled service within the warranty window is complimentary.",
+    text: "Standard quartz care applies: replace the battery when it slows and swap the strap when it shows wear — we can arrange both.",
   },
 ];
 
 const steps = [
   {
     n: "01",
-    title: "Register your movement",
-    text: "Within 30 days of delivery, share your serial and invoice on WhatsApp.",
+    title: "Order on WhatsApp",
+    text: "Message us the watch you want and your city. We confirm stock and the current price.",
   },
   {
     n: "02",
-    title: "Extend to 3 years",
-    text: "Registration extends international cover to a full three years.",
+    title: "Dispatch & deliver",
+    text: "Packed in its box and shipped the same or next day, usually 2–4 working days in major cities.",
   },
   {
     n: "03",
-    title: "Rest easy",
-    text: "Should the movement ever need our hands, we collect, repair and return it.",
+    title: "Pay on arrival",
+    text: "Inspect the watch carefully, then pay the courier. Cash on Delivery nationwide.",
   },
 ];
 
@@ -51,14 +51,14 @@ export default function WarrantyPage() {
     <div>
       <section className="hairline-b border-b border-gold-500/15">
         <div className="mx-auto max-w-3xl px-6 py-20 text-center sm:py-24">
-          <p className="eyebrow">Care & warranty</p>
+          <p className="eyebrow">Delivery &amp; care</p>
           <h1 className="display mt-4 text-4xl text-bone-50 sm:text-5xl">
-            Warranted for three years
+            Pay when you&apos;re happy
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-bone-400">
-            Every CHROVER carries a 2-year international warranty on its
-            movement. Register within 30 days and we extend that cover to a
-            third year.
+            Order on WhatsApp, inspect your watch on delivery, and pay the
+            courier only after you&apos;re satisfied. Unworn pieces can be
+            returned or exchanged within 7 days.
           </p>
         </div>
       </section>
@@ -66,8 +66,8 @@ export default function WarrantyPage() {
       {/* Steps */}
       <section className="mx-auto max-w-[1400px] px-4 py-20 sm:px-8">
         <div className="mb-12">
-          <p className="eyebrow">Extend your cover</p>
-          <h2 className="display mt-2 text-3xl text-bone-50">Three steps, three years</h2>
+          <p className="eyebrow">From order to wrist</p>
+          <h2 className="display mt-2 text-3xl text-bone-50">Three simple steps</h2>
         </div>
         <div className="grid gap-10 md:grid-cols-3">
           {steps.map((s) => (
@@ -80,12 +80,12 @@ export default function WarrantyPage() {
         </div>
         <div className="mt-12">
           <Link
-            href={waLink("Hello CHROVER, I'd like to register my new watch.")}
+            href={waLink("Hello CHROVER, I'd like to place an order.")}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-gold"
           >
-            Register my watch <IconArrow className="h-4 w-4" />
+            Order on WhatsApp <IconArrow className="h-4 w-4" />
           </Link>
         </div>
       </section>
@@ -114,9 +114,9 @@ export default function WarrantyPage() {
           <div>
             <h2 className="display text-2xl text-bone-100">Seven days to decide</h2>
             <p className="mt-3 max-w-xl text-sm leading-7 text-bone-500">
-              Unworn, untouched and still sealed in its box? Return or exchange
-              within 7 days of delivery. Straps and bracelets, once worn, are
-              non-returnable for hygiene.
+              Unworn and undamaged? Return or exchange within 7 days of
+              delivery. Straps and bracelets, once worn, are non-returnable for
+              hygiene.
             </p>
           </div>
           <Link href="/contact" className="btn btn-ghost">

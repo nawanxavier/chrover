@@ -9,25 +9,27 @@ export function StorySection() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/watches/story-watch.svg"
-            alt="A CHROVER chronograph on the watchmaker's bench"
+            alt="A curated CHROVER timepiece"
             loading="lazy"
             className="w-full"
           />
         </div>
 
         <div>
-          <p className="eyebrow">The atelier</p>
+          <p className="eyebrow">How we work</p>
           <h2 className="display mt-3 text-3xl leading-tight text-bone-50 sm:text-4xl">
-            Every watch is assembled by hand in Lahore.
+            Sourced smart. Sold honest.
           </h2>
           <p className="mt-6 max-w-md text-base leading-8 text-bone-400">
-            Each movement is built, regulated and tested by hand in our Lahore
-            atelier. The steel is milled, polished and inspected within a
-            kilometre of where it is boxed.
+            We buy watches from the local market at the best price we can find —
+            master copies and Swiss-likes included — and sell them to you at a
+            fair margin. Every piece is checked for function and condition
+            before it ships.
           </p>
           <p className="mt-4 max-w-md text-base leading-8 text-bone-400">
-            We make small numbers, deliberately, and keep every watch for a year
-            on a wrist before it is released.
+            Some arrive with their original box; the rest we pack in our
+            premium presentation box. What you see listed is exactly what you
+            receive.
           </p>
           <Link href="/about" className="btn btn-ghost mt-9">
             Read our story <IconArrow className="h-4 w-4" />

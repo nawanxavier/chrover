@@ -1,45 +1,45 @@
 import Link from "next/link";
-import { IconArrow, IconShield } from "@/components/icons";
+import { IconArrow, IconReturn } from "@/components/icons";
 
 const values = [
   {
-    title: "Assembled by hand",
-    text: "Every movement is built, timed and inspected by hand in Lahore.",
+    title: "Honest pricing",
+    text: "We buy wholesale from the local market and keep our margins fair and transparent.",
   },
   {
-    title: "Honest materials",
-    text: "316L steel, sapphire crystal, plated gold. We publish what every watch is made of.",
+    title: "Checked before dispatch",
+    text: "Every watch is inspected for function and condition before it ships.",
   },
   {
-    title: "Small numbers",
-    text: "Limited series are numbered and closed. We make what we can finish well.",
+    title: "Boxed, ready to gift",
+    text: "Original box where we have it, otherwise our premium presentation box.",
   },
   {
-    title: "Tested for a year",
-    text: "Each watch is worn for a year before release. Nothing leaves early.",
+    title: "Pay when you're happy",
+    text: "Cash on delivery across Pakistan — inspect the watch, then pay the courier.",
   },
 ];
 
-const timeline = [
+const steps = [
   {
-    year: "2019",
-    title: "The first bench",
-    text: "A single workbench in Lahore and one conviction: Pakistan deserves fine watches made carefully at home.",
+    n: "01",
+    title: "Order",
+    text: "Message us on WhatsApp with the piece you want and your city.",
   },
   {
-    year: "2021",
-    title: "The Calibre A1",
-    text: "Our first in-house automatic movement, assembled and regulated in the atelier.",
+    n: "02",
+    title: "Confirm",
+    text: "We confirm stock and the current price — stock moves fast.",
   },
   {
-    year: "2023",
-    title: "The boutique pieces",
-    text: "Openworked dials, limited to fifty pieces a year, each individually numbered.",
+    n: "03",
+    title: "Dispatch",
+    text: "Packed and shipped the same or next day; 2–4 working days in most cities.",
   },
   {
-    year: "2026",
-    title: "Across the country",
-    text: "CHROVER now delivers to every city in Pakistan, from Karachi to Gilgit.",
+    n: "04",
+    title: "Pay on arrival",
+    text: "Inspect the watch first, then pay the courier. Simple and safe.",
   },
 ];
 
@@ -49,14 +49,15 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="hairline-b border-b border-gold-500/15">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-28">
-          <p className="eyebrow">The atelier</p>
+          <p className="eyebrow">How we work</p>
           <h1 className="display mt-5 text-5xl leading-[1.05] text-bone-50 sm:text-6xl">
-            Fine watches, made at home.
+            Bought smart. Sold honest.
           </h1>
           <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-bone-400">
-            CHROVER is a Pakistani watchmaker. We build automatic movements in
-            small numbers, by hand, in Lahore — and stand behind every one of
-            them.
+            We source watches from the local market — stylists from Cartier,
+            Tissot, Rolex, Hublot, Patek Philippe and Audemars Piguet, plus our
+            own AURA line, master copies included — and resell them to you with
+            a fair margin and no markup tricks.
           </p>
         </div>
       </section>
@@ -68,26 +69,25 @@ export default function AboutPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/watches/story-watch.svg"
-              alt="A CHROVER chronograph in the atelier"
+              alt="A curated CHROVER timepiece"
               loading="lazy"
               className="w-full"
             />
           </div>
           <div>
-            <p className="eyebrow">Our origin</p>
+            <p className="eyebrow">What we actually do</p>
             <h2 className="display mt-3 text-3xl leading-tight text-bone-50 sm:text-4xl">
-              Built here, because it can be.
+              The sourcing is our job, not yours.
             </h2>
             <p className="mt-6 max-w-md text-base leading-8 text-bone-400">
-              For too long, owning a fine watch meant buying abroad. Our
-              founder returned to Lahore certain of one thing: the hands that
-              assemble a movement in Zurich can assemble it here — and do it
-              better, building for home.
+              We visit the bazar, buy in wholesale and take the sourcing risk so
+              you don&apos;t have to. Every watch is tested for function and
+              checked for condition before dispatch — no surprises at your door.
             </p>
             <p className="mt-4 max-w-md text-base leading-8 text-bone-400">
-              Every CHROVER still passes through the same benches. The steel is
-              milled, polished, regulated and tested within a kilometre of
-              where it is boxed.
+              Some pieces arrive with their original box; others we pack in our
+              premium presentation box. Inspect it on delivery and pay only
+              when you&apos;re happy — cash on delivery nationwide.
             </p>
           </div>
         </div>
@@ -111,16 +111,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Steps */}
       <section className="mx-auto max-w-[1400px] px-4 py-20 sm:px-8">
         <div className="mb-12">
           <p className="eyebrow">The road</p>
-          <h2 className="display mt-2 text-3xl text-bone-50">Seven years</h2>
+          <h2 className="display mt-2 text-3xl text-bone-50">How an order works</h2>
         </div>
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          {timeline.map((t) => (
-            <div key={t.year} className="hairline-t pt-6">
-              <p className="text-lg font-medium text-bone-100">{t.year}</p>
+          {steps.map((t) => (
+            <div key={t.n} className="hairline-t pt-6">
+              <p className="text-lg font-medium text-bone-100">{t.n}</p>
               <p className="mt-1 text-sm font-medium text-bone-300">{t.title}</p>
               <p className="mt-3 text-sm leading-7 text-bone-500">{t.text}</p>
             </div>
@@ -129,15 +129,15 @@ export default function AboutPage() {
 
         <div className="mt-20 text-center">
           <p className="max-w-xl text-base leading-8 text-bone-400">
-            Worn daily, your watch becomes part of how you keep time — and what
-            you leave behind.
+            Found a piece you like? Message us — we&apos;ll confirm stock and
+            have it on its way the same day.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link href="/shop" className="btn btn-gold">
               Shop the collection <IconArrow className="h-4 w-4" />
             </Link>
             <Link href="/warranty" className="btn btn-ghost">
-              <IconShield className="h-4 w-4" /> Our warranty
+              <IconReturn className="h-4 w-4" /> Delivery &amp; returns
             </Link>
           </div>
         </div>

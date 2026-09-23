@@ -153,8 +153,8 @@ export function ProductBuy({ product }: { product: Product }) {
         {[
           "Cash on Delivery available across Pakistan",
           "Complimentary delivery on orders over Rs. 5,000",
-          "2-year international movement warranty",
-          "7-day easy returns on unworn pieces",
+          "Every piece inspected before dispatch",
+          "Premium presentation box included",
         ].map((line) => (
           <li key={line} className="flex gap-3 text-sm leading-6 text-bone-500">
             <span className="text-bone-400">—</span>

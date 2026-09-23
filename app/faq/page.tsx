@@ -7,7 +7,7 @@ import { IconArrow } from "@/components/icons";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers on delivery, payment, warranty, sizing and care for CHROVER watches.",
+    "Answers on delivery, payment, returns, quality and care for CHROVER watches.",
 };
 
 const items = [
@@ -17,15 +17,15 @@ const items = [
   },
   {
     q: "How does Cash on Delivery work?",
-    a: "Cash on Delivery is available nationwide. Simply choose 'COD' when you place your order on WhatsApp, pay the courier on arrival, and inspect your watch in its sealed coffret before paying.",
+    a: "Cash on Delivery is available nationwide. Simply choose 'COD' when you place your order on WhatsApp, pay the courier on arrival, and inspect your watch before paying.",
   },
   {
-    q: "Are the watches genuine automatics?",
-    a: "Every CHROVER runs on a mechanical automatic movement — there are no quartz pieces in the collection. Movements are assembled and regulated by hand in our Lahore atelier, and each watch is tested for a year before release.",
+    q: "What kind of watches are these?",
+    a: "Our pieces are market-sourced stylists inspired by Cartier, Tissot, Rolex, Hublot, Patek Philippe and Audemars Piguet — master copies included. Each listing notes its build tier (e.g. Master AAA. Copy). They are reliable, everyday quartz pieces at honest prices.",
   },
   {
-    q: "What does the warranty cover?",
-    a: "Every timepiece carries a 2-year international warranty covering movement function and manufacture. Register your watch within 30 days and we extend cover to a third year. The warranty does not cover normal wear, straps, or accidental damage.",
+    q: "What if I have a problem with my watch?",
+    a: "Inspect your watch on delivery and message us within 48 hours if anything is wrong. Unworn, undamaged pieces can be returned or exchanged within 7 days of delivery. From there, standard watch care applies — batteries, straps and adjustments are quick to arrange on WhatsApp.",
   },
   {
     q: "Can I return or exchange?",
@@ -33,15 +33,15 @@ const items = [
   },
   {
     q: "How do I choose the right size?",
-    a: "Cases range from 38mm to 43mm. As a guide: 38–40mm suits most wrists and dress wear; 41–43mm suits larger wrists and sportier lines. We can advise on WhatsApp — share your wrist measurement and the models you like.",
+    a: "It depends on the model — a slim, rectangular Tank-style case wears small, while a bold chronograph wears larger. Send us your wrist measurement and the models you like and we'll advise on WhatsApp.",
   },
   {
-    q: "Do you make custom or commissioned pieces?",
-    a: "A small number of bespoke commissions are accepted each year — dial colours, engravings and occasional one-off movements. Reach the concierge to discuss your commission; lead time is 10–14 weeks.",
+    q: "Will a sold-out piece come back?",
+    a: "Often! Stock moves fast and our lineup rotates. Message us on WhatsApp about any sold-out model and we'll tell you if it's coming back.",
   },
   {
     q: "How do I care for my watch?",
-    a: "Wipe the case and bracelet with a soft cloth after wear, wind when it rests more than a day, and keep it away from strong magnets. Sapphire crystal resists scratches, but we recommend a service every 4–5 years.",
+    a: "Wipe the case and strap with a soft cloth after wear and keep it away from water and strong magnets. Strap swaps and battery changes are quick to arrange on WhatsApp.",
   },
 ];
 
@@ -55,8 +55,8 @@ export default function FaqPage() {
             Asked, and answered
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base leading-8 text-bone-400">
-            Everything before the first winding. Can&apos;t find your answer?
-            Message us directly.
+            Everything you need to know before ordering. Can&apos;t find your
+            answer? Message us directly.
           </p>
         </div>
       </section>

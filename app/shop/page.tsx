@@ -6,7 +6,7 @@ import { ProductCard } from "@/components/ProductCard";
 export const metadata: Metadata = {
   title: "Shop All Watches",
   description:
-    "Browse the complete CHROVER collection — dress, chronograph, diver and minimalist lines. Automatic movements, delivered across Pakistan on COD.",
+    "Browse the complete CHROVER selection — Cartier, Tissot, Rolex, Hublot, Patek Philippe, Audemars Piguet and AURA lines. Delivered across Pakistan on COD.",
 };
 
 interface ShopPageProps {
@@ -37,7 +37,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
     : collectionParam
       ? PRODUCTS.find((p) => p.collection === collectionParam)?.tagline ??
         "The full range of the maison."
-      : "Every piece from the atelier, in one room.";
+      : "Every piece we currently have, in one room.";
 
   return (
     <div>
