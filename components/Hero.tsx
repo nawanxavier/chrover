@@ -5,7 +5,7 @@ export function Hero() {
     <section className="hairline-b border-b border-gold-500/15">
       <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-4 pt-2 pb-12 sm:px-8 sm:pb-14 lg:grid-cols-[1.25fr_0.75fr] lg:gap-12 lg:pb-16">
         {/* Copy */}
-        <div>
+        <div className="translate-y-10">
           <h1 className="display text-[2.75rem] text-bone-50 sm:text-6xl">
             Curated timepieces, honest prices.
           </h1>
