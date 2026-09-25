@@ -37,7 +37,7 @@ export function Hero() {
             src="/images/watches/cartier-tank-solo-1.jpg"
             alt="Cartier Tank Solo on a CHROVER selection"
             width={1024}
-            height={1239}
+            height={1211}
             className="h-auto w-full object-cover"
           />
         </div>
