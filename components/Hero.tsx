@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section className="hairline-b border-b border-gold-500/15">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-4 pb-12 sm:px-8 sm:pb-14 lg:grid-cols-[1.25fr_0.75fr] lg:gap-12 lg:pb-16">
+      <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-4 pt-6 pb-12 sm:px-8 sm:pb-14 lg:grid-cols-[1.25fr_0.75fr] lg:gap-12 lg:pb-16">
         {/* Copy */}
         <div>
           <h1 className="display text-[2.75rem] text-bone-50 sm:text-6xl">
