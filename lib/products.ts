@@ -125,7 +125,6 @@ export const PRODUCTS: Product[] = [
     price: 2450,
     compareAtPrice: 3850,
     reviews: 1,
-    soldOut: true,
     images: [
       photo("tissot-og-leather", 1),
       photo("tissot-og-leather", 2),
