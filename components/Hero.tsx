@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section className="hairline-b border-b border-gold-500/15">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-4 pt-10 pb-12 sm:px-8 sm:pt-12 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:pt-14 lg:pb-16">
+      <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-4 pt-10 pb-12 sm:px-8 sm:pt-12 sm:pb-14 lg:grid-cols-[1.25fr_0.75fr] lg:gap-12 lg:pt-14 lg:pb-16">
         {/* Copy */}
         <div>
           <h1 className="display text-[2.75rem] text-bone-50 sm:text-6xl">
@@ -31,14 +31,14 @@ export function Hero() {
         </div>
 
         {/* Visual */}
-        <div className="mx-auto w-full max-w-[560px] overflow-hidden border border-gold-500/10 bg-ink-900">
+        <div className="mx-auto w-full max-w-[480px] overflow-hidden border border-gold-500/10 bg-ink-900">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/watches/cartier-tank-solo-1.jpg"
             alt="Cartier Tank Solo on a CHROVER selection"
             width={1024}
             height={1239}
-            className="aspect-[5/4] h-auto w-full object-cover object-[50%_80%]"
+            className="h-auto w-full object-cover"
           />
         </div>
       </div>
