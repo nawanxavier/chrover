@@ -11,9 +11,9 @@ export function Hero() {
           </h1>
           <p className="mt-5 max-w-md text-base leading-8 text-bone-400">
             A focused selection of Cartier, Tissot, Rolex, Hublot, Patek
-            Philippe, Audemars Piguet and AURA. Every piece is quality-checked
-            and boxed before dispatch, with advance payment by JazzCash,
-            EasyPaisa or bank transfer.
+            Philippe, Audemars Piguet and AURA. Every piece is
+            quality-checked and boxed before dispatch. Advance payment via
+            JazzCash, EasyPaisa or bank transfer.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -26,7 +26,7 @@ export function Hero() {
           </div>
 
           <p className="mt-9 border-t border-gold-500/15 pt-4 text-[0.66rem] tracking-[0.18em] text-bone-500 uppercase">
-            Free delivery over Rs 5,000 — advance payment — 7-day returns
+            Free delivery over Rs 5,000 — 7-day returns
           </p>
         </div>
 
