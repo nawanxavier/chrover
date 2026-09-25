@@ -7,7 +7,7 @@ export function Hero() {
         {/* Copy */}
         <div className="translate-y-10">
           <h1 className="display text-[2.75rem] text-bone-50 sm:text-6xl">
-            Curated timepieces, honest prices.
+            Curated timepieces. Honest prices.
           </h1>
           <p className="mt-5 max-w-md text-base leading-8 text-bone-400">
             A focused selection of Cartier, Tissot, Rolex, Hublot, Patek
