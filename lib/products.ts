@@ -1,6 +1,7 @@
 import type { Category, Product, Spec } from "./types";
 
 const img = (slug: string, n: number) => `/images/watches/${slug}-${n}.svg`;
+const photo = (slug: string, n: number) => `/images/watches/${slug}-${n}.jpg`;
 
 const specs = (
   brand: string,
@@ -22,14 +23,14 @@ export const CATEGORIES: Category[] = [
     name: "Cartier",
     label: "Cartier",
     tagline: "The timeless Parisian icon",
-    image: img("cartier-tank-solo", 1),
+    image: photo("cartier-tank-solo", 1),
   },
   {
     id: "tissot",
     name: "Tissot",
     label: "Tissot",
     tagline: "Swiss precision, everyday style",
-    image: img("tissot-prx-silicone", 1),
+    image: photo("tissot-og-leather", 1),
   },
   {
     id: "rolex",
@@ -50,7 +51,7 @@ export const CATEGORIES: Category[] = [
     name: "Patek",
     label: "Patek Philippe",
     tagline: "The connoisseur's signature",
-    image: img("patek-geneve", 1),
+    image: photo("patek-geneve", 1),
   },
   {
     id: "audemars",
@@ -88,7 +89,7 @@ export const PRODUCTS: Product[] = [
     price: 2450,
     compareAtPrice: 4850,
     reviews: 2,
-    images: [img("cartier-tank-solo", 1)],
+    images: [photo("cartier-tank-solo", 1), photo("cartier-tank-solo", 2)],
     strap: ["Leather"],
     specs: specs("Cartier", "Tank Solo", "Gold-tone alloy", "Leather"),
     collection: "Cartier",
@@ -125,7 +126,11 @@ export const PRODUCTS: Product[] = [
     compareAtPrice: 3850,
     reviews: 1,
     soldOut: true,
-    images: [img("tissot-og-leather", 1)],
+    images: [
+      photo("tissot-og-leather", 1),
+      photo("tissot-og-leather", 2),
+      photo("tissot-og-leather", 3),
+    ],
     strap: ["Leather"],
     specs: specs("Tissot", "OG", "Stainless steel", "Leather"),
     collection: "Tissot",
@@ -235,7 +240,11 @@ export const PRODUCTS: Product[] = [
     price: 2999,
     compareAtPrice: 5000,
     reviews: 0,
-    images: [img("patek-geneve", 1)],
+    images: [
+      photo("patek-geneve", 1),
+      photo("patek-geneve", 2),
+      photo("patek-geneve", 3),
+    ],
     strap: ["Leather"],
     specs: specs("Patek Philippe", "Geneve", "Gold-tone alloy", "Leather"),
     collection: "Patek Philippe",

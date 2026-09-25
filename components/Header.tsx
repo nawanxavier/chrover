@@ -5,6 +5,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useCart } from "@/lib/cart";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { Logo } from "@/components/Logo";
 import { IconBag, IconClose, IconMenu } from "@/components/icons";
 
 const NAV_LINKS = [
@@ -24,11 +25,8 @@ export function Header() {
       <header className="hairline-b sticky top-0 z-40 bg-ink-950/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-4 py-5 sm:px-8">
           {/* Wordmark */}
-          <Link
-            href="/"
-            className="text-[0.95rem] font-semibold tracking-[0.22em] text-bone-50 uppercase"
-          >
-            CHROVER
+          <Link href="/" className="flex items-center" aria-label="CHROVER — home">
+            <Logo className="h-6 sm:h-7" />
           </Link>
 
           {/* Desktop nav */}
@@ -94,9 +92,7 @@ export function Header() {
           }`}
         >
           <div className="hairline-b flex items-center justify-between px-6 py-5">
-            <span className="text-sm font-semibold tracking-[0.22em] text-bone-50 uppercase">
-              CHROVER
-            </span>
+            <Logo className="h-5" />
             <button
               onClick={() => setOpen(false)}
               aria-label="Close menu"

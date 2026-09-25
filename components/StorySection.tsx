@@ -8,10 +8,12 @@ export function StorySection() {
         <div className="overflow-hidden border border-gold-500/10 bg-ink-900">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/watches/story-watch.svg"
+            src="/images/watches/patek-geneve-2.jpg"
             alt="A curated CHROVER timepiece"
             loading="lazy"
-            className="w-full"
+            width={1122}
+            height={1402}
+            className="aspect-[4/5] w-full object-contain"
           />
         </div>
 

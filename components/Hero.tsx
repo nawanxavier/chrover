@@ -34,11 +34,11 @@ export function Hero() {
         <div className="overflow-hidden border border-gold-500/10 bg-ink-900">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/watches/hero-watch.svg"
-            alt="Featured timepiece"
-            width={520}
-            height={520}
-            className="w-full"
+            src="/images/watches/cartier-tank-solo-1.jpg"
+            alt="Cartier Tank Solo on a CHROVER selection"
+            width={1024}
+            height={1536}
+            className="aspect-[4/5] w-full object-cover object-center"
           />
         </div>
       </div>

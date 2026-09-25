@@ -23,7 +23,7 @@ export function CategoryGrid() {
                 src={c.image}
                 alt={c.label}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
             <p className="mt-4 text-sm font-medium text-bone-100 transition-colors group-hover:text-bone-400">

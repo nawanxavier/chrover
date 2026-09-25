@@ -2,6 +2,7 @@ import Link from "next/link";
 import { CATEGORIES, PRODUCTS } from "@/lib/products";
 import { site, waLink } from "@/lib/site";
 import { NewsletterForm } from "@/components/NewsletterForm";
+import { Logo } from "@/components/Logo";
 import {
   IconFacebook,
   IconInstagram,
@@ -41,9 +42,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-[1400px] gap-12 px-4 py-16 sm:px-8 lg:grid-cols-12">
         {/* Brand */}
         <div className="lg:col-span-4">
-          <p className="text-[0.95rem] font-semibold tracking-[0.22em] text-bone-50 uppercase">
-            CHROVER
-          </p>
+          <Logo className="h-7" />
           <p className="mt-4 max-w-xs text-sm leading-7 text-bone-400">
             Curated timepieces — Cartier, Tissot, Rolex, Hublot, Patek
             Philippe, Audemars Piguet and AURA — quality-checked, boxed and

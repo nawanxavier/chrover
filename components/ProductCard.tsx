@@ -20,7 +20,7 @@ export function ProductCard({ product }: { product: Product }) {
             src={product.images[0]}
             alt={product.name}
             loading="lazy"
-            className={`h-full w-full object-cover ${
+            className={`h-full w-full object-contain ${
               product.soldOut ? "opacity-40 saturate-0" : ""
             }`}
           />

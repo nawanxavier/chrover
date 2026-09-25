@@ -13,7 +13,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
         <img
           src={images[active]}
           alt={`${name} — view ${active + 1}`}
-          className="aspect-square w-full object-cover"
+          className="aspect-square w-full object-contain"
         />
       </div>
 
@@ -31,7 +31,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
             }`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={src} alt="" className="aspect-square w-full object-cover" />
+            <img src={src} alt="" className="aspect-square w-full object-contain" />
           </button>
         ))}
       </div>
