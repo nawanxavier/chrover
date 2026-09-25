@@ -31,7 +31,7 @@ export function Hero() {
         </div>
 
         {/* Visual */}
-        <div className="mx-auto w-full max-w-[480px] translate-y-1 overflow-hidden border border-gold-500/10 bg-ink-900">
+        <div className="w-full translate-y-1 overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/watches/cartier-tank-solo-1.jpg"
